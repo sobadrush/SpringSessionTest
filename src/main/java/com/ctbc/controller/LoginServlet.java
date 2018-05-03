@@ -25,7 +25,7 @@ public class LoginServlet extends HttpServlet {
 		String loginName = request.getParameter("loginName");
 		String password = request.getParameter("password");
 		request.getSession().setAttribute("login", true);
-		request.getSession().setAttribute(loginName, password);
+		request.getSession().setAttribute(loginName, password);	
 		response.sendRedirect(request.getContextPath() + "/show.jsp");
 	}
 }

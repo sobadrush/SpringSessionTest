@@ -24,4 +24,19 @@ https://blog.csdn.net/zl_jay/article/details/16802953
 ※※※Windows下使用Nginx+tomcat配置负载均衡※※※
 https://blog.csdn.net/aqsunkai/article/details/51497926
 
+※※※Nginx负载均衡策略※※※
+https://blog.csdn.net/fengshizty/article/details/47723291
+
+※※※response.sendRedirect问题 ※※※
+http://blog.sina.com.cn/s/blog_40ce02d70102wbzo.html
+
+
 http://blog.51cto.com/xslwahaha/1741259
+
+
+
+
+
+
+
+

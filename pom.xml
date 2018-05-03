@@ -102,10 +102,9 @@
 		    <version>1.4.196</version>
 		</dependency>
         
-        
     </dependencies>
     <build>
-        <finalName>${project.artifactId}-${project.version}-001</finalName>
+        <finalName>${project.artifactId}-${project.version}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
