@@ -1,12 +1,9 @@
 package _00_config;
 
-import java.sql.Connection;
 import java.sql.SQLException;
 
 import javax.sql.DataSource;
 
-import org.springframework.context.ConfigurableApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabase;
@@ -87,11 +84,12 @@ public class RootConfig {
 //		ctx.close();
 		
 		// annotation config
-		ConfigurableApplicationContext ctx = new AnnotationConfigApplicationContext(RootConfig.class);
-		DataSource ds = ctx.getBean(DataSource.class);
-		Connection conn = ds.getConnection();
-		System.out.println("ITOA_MAIN Datasource : " + conn.getMetaData().getDatabaseProductName());
-		ctx.close();
+//		ConfigurableApplicationContext ctx = new AnnotationConfigApplicationContext(RootConfig.class);
+//		DataSource ds = ctx.getBean(DataSource.class);
+//		Connection conn = ds.getConnection();
+//		System.out.println("ITOA_MAIN Datasource : " + conn.getMetaData().getDatabaseProductName());
+//		ctx.close();
+		
 	}
 
 }

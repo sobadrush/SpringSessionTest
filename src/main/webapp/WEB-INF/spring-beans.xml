@@ -15,12 +15,23 @@
 	
 	<bean class="org.springframework.session.jdbc.config.annotation.web.http.JdbcHttpSessionConfiguration"/>
 	
-	<jdbc:embedded-database id="dataSource" database-name="testdb" type="H2">
-	    <jdbc:script location="classpath:org/springframework/session/jdbc/schema-h2.sql"/>
-	</jdbc:embedded-database>
+<!-- 	<jdbc:embedded-database id="ds" database-name="testdb" type="H2"> -->
+<!-- 	    <jdbc:script location="classpath:org/springframework/session/jdbc/schema-h2.sql"/> -->
+<!-- 	</jdbc:embedded-database> -->
+	
+	<bean id="ds" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="url"              value="jdbc:sqlserver://172.24.17.52:1803;databaseName=ITOA_MAIN"/>
+		<property name="driverClassName"  value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+		<property name="username"         value="ITOA_MAIN_mod"/>
+		<property name="password"         value="f3ru9cj4"/>
+	</bean>
+	
+<!-- 	<jdbc:initialize-database data-source="ds" enabled="true"> -->
+<!-- 	    <jdbc:script location="classpath:/org/springframework/session/jdbc/schema-sqlserver.sql" /> -->
+<!-- 	</jdbc:initialize-database> -->
 	
 	<bean class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-	    <constructor-arg ref="dataSource"/>
+	    <constructor-arg name="dataSource" ref="ds"/>
 	</bean>
 
 <!-- 	<context:annotation-config/> -->

@@ -15,5 +15,13 @@ https://blog.csdn.net/u010648555/article/details/79459953
 
 https://docs.spring.io/spring-session/docs/1.3.2.RELEASE/reference/html5/guides/httpsession-jdbc.html
 
-jdbc
+※※※jdbc※※※
 http://huan1993.iteye.com/blog/2300315
+
+※※※Windows下nginx+tomcat的负载均衡※※※
+https://blog.csdn.net/zl_jay/article/details/16802953
+
+※※※Windows下使用Nginx+tomcat配置负载均衡※※※
+https://blog.csdn.net/aqsunkai/article/details/51497926
+
+http://blog.51cto.com/xslwahaha/1741259
