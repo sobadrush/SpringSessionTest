@@ -8,3 +8,12 @@ https://blog.csdn.net/zyhlwzy/article/details/78033413
 
 零XML
 https://stackoverflow.com/questions/8075790/how-to-register-spring-configuration-annotated-class-instead-of-applicationcont
+
+
+https://blog.csdn.net/u010648555/article/details/79459953
+
+
+https://docs.spring.io/spring-session/docs/1.3.2.RELEASE/reference/html5/guides/httpsession-jdbc.html
+
+jdbc
+http://huan1993.iteye.com/blog/2300315
