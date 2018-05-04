@@ -9,11 +9,20 @@
     <title>Show.jsp</title>
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
   </head>
-	<body class="container">  
-		<h1 style="color:red;">【Server 1】</h1>
-	    <p>輸出session中的值:</p>  
+	<body class="container"> 
+	 
+	 	<div>
+			<h1 style="color:red;float: left;">【Server 1】</h1>
+			<form action="<%=request.getContextPath()%>/LoginServlet" method="post" style="float: right;">
+				 <input type="submit" value="登出" class="btn btn-warning btn-lg"/>
+				 <input type="hidden" name="userAction" value="doLogout"/>
+			</form>
+	 	</div>
+		
+		<br/>
+	    <p style="clear: both;">輸出session中的值:</p>  
 	    <%  
-		    if (request.getSession().getAttribute("login") == null) {  
+		    if (request.getSession().getAttribute("isLogin") == null) {  
 		        response.sendRedirect(request.getContextPath() + "/login.jsp");  
 		    }  
 		%>  
@@ -28,7 +37,7 @@
 				while (keys.hasMoreElements()){
 					String key = (String) keys.nextElement();
 					out.println( "<tr>" +
-									"<td>" + key + "</td>" + "<td>" + session.getValue(key) + "</td>" +
+									"<td>" + "session.getValue( \"" + key +"\" )" + "</td>" + "<td>" + session.getValue(key) + "</td>" +
 								 "</tr>" );
 				}
 				out.println("</table>");
