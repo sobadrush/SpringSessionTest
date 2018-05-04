@@ -16,25 +16,25 @@
 <!-- 		<dispatcher>ERROR</dispatcher>   -->
 <!-- 	</filter-mapping> -->
 
-<!-- 	<context-param> -->
-<!-- 		<param-name>contextClass</param-name> -->
-<!-- 		<param-value>org.springframework.web.context.support.AnnotationConfigWebApplicationContext</param-value> -->
-<!-- 	</context-param> -->
+	<context-param>
+		<param-name>contextClass</param-name>
+		<param-value>org.springframework.web.context.support.AnnotationConfigWebApplicationContext</param-value>
+	</context-param>
 	
-<!-- 	<context-param> -->
-<!-- 		<param-name>contextConfigLocation</param-name> -->
-<!-- 		<param-value>_00_config.RootConfig</param-value> -->
-<!-- 	</context-param> -->
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>_00_config.RootConfig</param-value>
+	</context-param>
 <!-- 		<param-value>/WEB-INF/spring-beans.xml</param-value> -->
 
 <!-- 	<listener> -->
 <!-- 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class> -->
 <!-- 	</listener> -->
 		
-	<context-param>
-	    <param-name>contextConfigLocation</param-name>
-	    <param-value>/WEB-INF/spring-beans.xml</param-value>
-	</context-param>
+<!-- 	<context-param> -->
+<!-- 	    <param-name>contextConfigLocation</param-name> -->
+<!-- 	    <param-value>/WEB-INF/spring-beans.xml</param-value> -->
+<!-- 	</context-param> -->
 	
 	<listener>
 	    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
