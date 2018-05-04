@@ -1,0 +1,7 @@
+start nginx： 啟動nginx
+
+nginx -t：檢查配置文件中是否有錯
+
+nginx -s reload ：修改完配置文件重載
+
+nginx -s stop：停止nginx
