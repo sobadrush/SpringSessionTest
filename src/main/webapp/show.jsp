@@ -53,7 +53,7 @@
 	    	</thead>
 	    	<tbody>
 	    		<tr>
-	    			<td>jsessionId</td><td><%=session.getId()%></td>
+	    			<td>jsessionId</td><td style="color:green;"><%=session.getId()%></td>
 				</tr>	
 				<tr>    
 	    			<td>request.getRemoteAddr()</td><td><%=request.getRemoteAddr()%></td>
