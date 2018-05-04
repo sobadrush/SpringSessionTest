@@ -68,7 +68,7 @@
 	    			<td>request.getHeader("X-Forwarded-For")</td><td><%=request.getHeader("X-Forwarded-For")%></td>
 				</tr>			
 				<tr>    
-	    			<td>request.getLocalPort()</td><td><%=request.getLocalPort()%></td>
+	    			<td>request.getLocalPort()</td><td style="color:red;"><%=request.getLocalPort()%></td>
 				</tr>			
 	    	</tbody>
 	    </table>
