@@ -18,8 +18,6 @@ import org.springframework.session.jdbc.config.annotation.web.http.EnableJdbcHtt
 //@EnableTransactionManagement
 @EnableJdbcHttpSession
 //@ImportResource("file:E:\\CTBC_workspace_Oxygen_3a\\SpringSessionTest\\src\\main\\webapp\\WEB-INF\\spring-beans.xml")
-//@ComponentScan(basePackageClasses = { org.springframework.web.filter.DelegatingFilterProxy.class })
-//@ComponentScan(basePackages= {"org.springframework.web.filter.*"})
 public class RootConfig {
 
 //	@Bean
@@ -95,7 +93,7 @@ public class RootConfig {
 //		Connection conn = ds.getConnection();
 //		System.out.println("ITOA_MAIN Datasource : " + conn.getMetaData().getDatabaseProductName());
 //		ctx.close();
-		
+		 
 		// annotation config
 		ConfigurableApplicationContext ctx = new AnnotationConfigApplicationContext(RootConfig.class);
 		DataSource ds = ctx.getBean(DataSource.class);
