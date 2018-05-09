@@ -47,6 +47,13 @@
 		    <version>${spring-version}</version>
 		</dependency>
 		        
+		<!-- SPRING-JDBC -->
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-jdbc</artifactId>
+		    <version>${spring-version}</version>
+		</dependency>
+		        
 		<!-- SPRING-WEB -->
 		<dependency>
 		    <groupId>org.springframework</groupId>
@@ -55,11 +62,11 @@
 		</dependency>
 		        
 		<!-- SPRING-WEBMVC -->
-		<dependency>
-		    <groupId>org.springframework</groupId>
-		    <artifactId>spring-webmvc</artifactId>
-		    <version>${spring-version}</version>
-		</dependency>
+<!-- 		<dependency> -->
+<!-- 		    <groupId>org.springframework</groupId> -->
+<!-- 		    <artifactId>spring-webmvc</artifactId> -->
+<!-- 		    <version>${spring-version}</version> -->
+<!-- 		</dependency> -->
 		        
         <!-- SPRING-SESSION -->
 		<dependency>
@@ -69,11 +76,11 @@
 		</dependency>
                 
         <!-- SPRING-SESSION-JDBC -->
-		<dependency>
-		    <groupId>org.springframework.session</groupId>
-		    <artifactId>spring-session-jdbc</artifactId>
-		    <version>2.0.2.RELEASE</version>
-		</dependency>
+<!-- 		<dependency> -->
+<!-- 		    <groupId>org.springframework.session</groupId> -->
+<!-- 		    <artifactId>spring-session-jdbc</artifactId> -->
+<!-- 		    <version>2.0.2.RELEASE</version> -->
+<!-- 		</dependency> -->
 		        
         <!-- EMBEDDED-REDIS -->
 <!-- 		<dependency> -->
@@ -104,11 +111,11 @@
 		</dependency>
 		
         <!-- H2 database -->
-		<dependency>
-		    <groupId>com.h2database</groupId>
-		    <artifactId>h2</artifactId>
-		    <version>1.4.196</version>
-		</dependency>
+<!-- 		<dependency> -->
+<!-- 		    <groupId>com.h2database</groupId> -->
+<!-- 		    <artifactId>h2</artifactId> -->
+<!-- 		    <version>1.4.196</version> -->
+<!-- 		</dependency> -->
         
     </dependencies>
     <build>

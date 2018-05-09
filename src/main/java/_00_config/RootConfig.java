@@ -1,9 +1,12 @@
 package _00_config;
 
+import java.sql.Connection;
 import java.sql.SQLException;
 
 import javax.sql.DataSource;
 
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
@@ -19,13 +22,23 @@ import org.springframework.session.jdbc.config.annotation.web.http.EnableJdbcHtt
 //@ComponentScan(basePackages= {"org.springframework.web.filter.*"})
 public class RootConfig {
 
+//	@Bean
+//	public DataSource dataSource(){
+//		DriverManagerDataSource ds = new DriverManagerDataSource();
+//		ds.setUrl("jdbc:sqlserver://172.24.17.52:1803;databaseName=ITOA_MAIN");
+//		ds.setDriverClassName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+//		ds.setUsername("ITOA_MAIN_mod");
+//		ds.setPassword("f3ru9cj4");
+//		return ds; 
+//	}
+	
 	@Bean
 	public DataSource dataSource(){
 		DriverManagerDataSource ds = new DriverManagerDataSource();
-		ds.setUrl("jdbc:sqlserver://172.24.17.52:1803;databaseName=ITOA_MAIN");
+		ds.setUrl("jdbc:sqlserver://127.0.0.1:1433;databaseName=SpringSessionTestDB");
 		ds.setDriverClassName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-		ds.setUsername("ITOA_MAIN_mod");
-		ds.setPassword("f3ru9cj4");
+		ds.setUsername("sa");
+		ds.setPassword("sa123456");
 		return ds; 
 	}
 	
@@ -84,11 +97,11 @@ public class RootConfig {
 //		ctx.close();
 		
 		// annotation config
-//		ConfigurableApplicationContext ctx = new AnnotationConfigApplicationContext(RootConfig.class);
-//		DataSource ds = ctx.getBean(DataSource.class);
-//		Connection conn = ds.getConnection();
-//		System.out.println("ITOA_MAIN Datasource : " + conn.getMetaData().getDatabaseProductName());
-//		ctx.close();
+		ConfigurableApplicationContext ctx = new AnnotationConfigApplicationContext(RootConfig.class);
+		DataSource ds = ctx.getBean(DataSource.class);
+		Connection conn = ds.getConnection();
+		System.out.println("Datasource : " + conn.getMetaData().getDatabaseProductName());
+		ctx.close();
 		
 	}
 
